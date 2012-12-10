@@ -25,7 +25,7 @@ public class ExampleWs {
 	}
 	
 	@GET
-	@Path("/getPerson/{name}")
+	@Path("/getPerson/{nome}")
 	@Produces("text/plain")
 	public String getPerson(@PathParam("name")String name){
 		return "Hello "+name;
