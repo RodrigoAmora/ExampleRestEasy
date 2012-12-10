@@ -22,7 +22,7 @@ public class Person {
 	@XmlElement(name="age")
 	private Integer age;
 
-	public String getNome() {
+	public String getName() {
 		return name;
 	}
 

@@ -16,7 +16,7 @@ public class Consumer {
 		HttpClient client = new DefaultHttpClient();
 		
 		HttpGet get = new HttpGet("http://localhost:8080/ExampleRestEasy/example/getPerson");
-		get.addHeader("accept", "text/plain");
+		get.addHeader("accept", "application/xml");
 
 		HttpResponse response = client.execute(get);
 		InputStream content = response.getEntity().getContent();
